@@ -1,0 +1,29 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+    {
+        "relationshipName": "ticket",
+        "otherEntityName": "ticket",
+        "realtionshipType": "many-to-many",
+        "ownerSide": "false",
+        "otherEntityRelationshipName": "label"
+
+        }
+        ],
+    "fields": [
+        {
+            "fieldName": "label",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required",
+                "minlength"
+            ],
+            "fieldValidateRulesMinlength": "3"
+        }
+    ],
+    "dto": "no",
+    "service": "no",
+    "entityTableName": "label",
+    "jpaMetamodelFiltering": false,
+    "pagination": "no"
+}
